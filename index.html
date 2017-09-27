@@ -12,32 +12,34 @@
     <div class="container">
       <h1>Let's Play Pig-Dice!</h1>
       <br>
+<!-- PLAYER ONE -->
       <div class="row">
         <div class="col-md-6">
           <h4>Player 1</h4>
           <button type="button" name="button" class="btn btn-info" id="pOneRoll">Roll</button>
-          <button type="button" name="button" class="btn btn-danger" id="pOneHold">Hold</button>
+          <button type="button" name="button" class="btn btn-danger hold" id="pOneHold">Hold</button>
         </div>
-        <div class="col-md-6">
-          <h4>Player 2</h4>
-          <button type="button" name="button" class="btn btn-warning" id="pTwoRoll">Roll</button>
-          <button type="button" name="button" class="btn btn-danger" id="pTwoHold">Hold</button>
-        </div>
-      </div>
-      <div class="row">
         <div class="col-md-6">
           <h4>Player 1 Score</h4>
           <div class="well">
             <p id="pOneRollDisplay"></p>
-            <p id="pOneScore"></p>
-            <p id="pOneDetails"></p>
+            <p id="pOneScores"></p>
           </div>
         </div>
+      </div>
+<!-- PLAYER TWO -->
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Player 2</h4>
+          <button type="button" name="button" class="btn btn-warning" id="pTwoRoll">Roll</button>
+          <button type="button" name="button" class="btn btn-danger hold" id="pTwoHold">Hold</button>
+        </div>
+
         <div class="col-md-6">
           <h4>Player 2 Score</h4>
           <div class="well">
             <p id="pTwoRollDisplay"></p>
-            <p id="pTwoScore"></p>
+            <p id="pTwoScores"></p>
           </div>
         </div>
       </div>
