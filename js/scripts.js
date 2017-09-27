@@ -27,12 +27,12 @@ Player.prototype.addRolls = function() {
 Player.prototype.hold = function() {
   this.totalScore += this.roundScore;
   this.roundScore = 0; //Reset roundScore to 0 for next turn (does NOT reset totalScore!)
-
+  return "Your total score: " + this.totalScore; //shows total score on hold, need to display proper
 }
 
 //Display which player and the number rolled
 Player.prototype.details = function() {
-  return "Points this Round = " + this.roundScore + "!  " + "Total Score = " + this.totalScore + "!";
+  return "Points this Round = " + this.roundScore + "!";
 }
 
 
@@ -65,7 +65,7 @@ $(document).ready(function(){
 //Click HOLD
   $(".hold").click(function(){
     var playerOneHold = newPlayer.hold();
-    $("#pOneScores").text(playerOneHold);
+    $("#pOneScoreRight").text(playerOneHold);
 
     var playerTwoHold = newPlayer2.hold();
     $("#pTwoScores").text(playerTwoHold);
